@@ -41,6 +41,39 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  margin-top: 150px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #858585;
+}
+
+.title_white {
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1230px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.logo {
+  height: 51px;
+}
+
 .btn {
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
@@ -62,14 +95,18 @@ button {
   transition: all 0.5s;
 }
 
-.wrapper {
-  max-width: 1230px;
-  padding: 0px 15px;
-  margin: 0px auto;
-}
-
-.logo {
-  height: 51px;
+.field {
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 0px 0px 11px;
+  color: #ffffff;
 }
 
 .header {
@@ -82,18 +119,7 @@ button {
   text-align: center;
 }
 
-.section {
-  margin-top: 150px;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33px;
-  color: #858585;
-}
-
-/*promo====================================*/
+/*promo========================================*/
 
 .promo {
   width: 100%;
@@ -141,7 +167,7 @@ button {
   transition: transform 0.2s;
 }
 
-/*services=================================*/
+/*services=====================================*/
 
 .services_row {
   margin-top: 60px;
@@ -177,7 +203,7 @@ button {
   margin-top: 50px;
 }
 
-/*info=====================================*/
+/*info=========================================*/
 
 .info {
   background-image: url(../img/info/bg.jpg);
@@ -193,7 +219,7 @@ button {
   font-weight: 400;
 }
 
-/*steps====================================*/
+/*steps========================================*/
 
 .steps_row {
   display: flex;
@@ -227,13 +253,18 @@ button {
   margin-bottom: 2px;
 }
 
+.steps_img {
+  width: 100%;
+  height: 100%;
+}
+
 .steps_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/*conteiner================================*/
+/*conteiner====================================*/
 
 .container {
   background-image: url(../img/container/bg.jpg);
@@ -245,6 +276,10 @@ button {
   color: #ffffff;
 }
 
+.container .title {
+  margin-bottom: 60px;
+}
+
 .conteiner_body {
   display: flex;
   justify-content: space-between;
@@ -253,4 +288,280 @@ button {
 
 .container_coll {
   width: 46%;
+}
+
+/*order========================================*/
+
+.order_field {
+  margin-bottom: 60px;
+}
+
+/*contact======================================*/
+
+.contact_item {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact_item + .contact_item {
+  margin-top: 30px;
+}
+
+.contacts_tel {
+  display: block;
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+
+.contacts_tel:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+/*footer=======================================*/
+
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer_link {
+  display: block;
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+
+.footer_link:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 1230px) {
+  h1 {
+    font-size: 58px;
+    line-height: 72px;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .section {
+    margin-top: 100px;
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 32px;
+  }
+
+  /*header=====================================*/
+
+  .header {
+    padding-top: 24px;
+  }
+
+  /*promo======================================*/
+
+  .promo_subtitle {
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  /*services===================================*/
+
+  .services_row {
+    margin-top: 40px;
+  }
+
+  .services_coll {
+    width: 48%;
+  }
+
+  .services_item + .services_item {
+    margin-top: 24px;
+  }
+
+  .services_caption {
+    margin-bottom: 10px;
+  }
+
+  /*info=======================================*/
+
+  .info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /*steps======================================*/
+
+  .steps_coll {
+    width: 48%;
+  }
+
+  .steps_title {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .steps_number {
+    margin-bottom: 5px;
+  }
+
+  /*container==================================*/
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container_coll {
+    width: 48%;
+  }
+
+  .contact_item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact_item + .contact_item {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1010px) {
+  h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .section {
+    margin-top: 80px;
+  }
+
+  /*services===================================*/
+
+  .services_row {
+    margin-top: 24px;
+  }
+
+  .services_coll {
+    width: 100%;
+  }
+
+  .services_coll + .services_coll {
+    margin-top: 24px;
+  }
+
+  .services_img {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  /*info=======================================*/
+
+  .info {
+    display: none;
+  }
+
+  /*steps======================================*/
+
+  .steps_coll {
+    width: 100%;
+  }
+
+  .steps_item + .steps_item {
+    margin-top: 24px;
+  }
+
+  .steps_coll + .steps_coll {
+    margin-top: 24px;
+  }
+
+  .steps_img {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  /*container==================================*/
+
+  .container {
+    margin-top: 0px;
+  }
+
+  .container .title {
+    margin-top: 24px;
+  }
+
+  .container_coll {
+    width: 100%;
+  }
+
+  .container_coll + .container_coll {
+    margin-top: 24px;
+  }
+
+  /*order======================================*/
+
+  .order_field {
+    margin-bottom: 24px;
+  }
+
+  /*footer=====================================*/
+
+  .footer {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .section {
+    margin-top: 60px;
+  }
+
+  /*promo======================================*/
+
+  .promo_caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .promo_subtitle {
+    margin-bottom: 24px;
+    margin-top: 15px;
+  }
+
+  /*services===================================*/
+
+  .services_caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /*container==================================*/
+
+  .container {
+    margin-top: 0px;
+  }
 }
