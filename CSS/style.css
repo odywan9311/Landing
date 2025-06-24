@@ -564,4 +564,8 @@ a {
   .container {
     margin-top: 0px;
   }
+
+  .container .title {
+    margin-bottom: 40px;
+  }
 }
