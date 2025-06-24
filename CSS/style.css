@@ -232,3 +232,25 @@ button {
   height: 100%;
   object-fit: cover;
 }
+
+/*conteiner================================*/
+
+.container {
+  background-image: url(../img/container/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  color: #ffffff;
+}
+
+.conteiner_body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container_coll {
+  width: 46%;
+}
